@@ -1,3 +1,6 @@
+tqdm
+plotly
+scikit-learn
 streamlit
 torch
 torchvision
