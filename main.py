@@ -2,6 +2,7 @@ import streamlit as st
 import torch
 from torchvision import transforms
 from PIL import Image
+from download_model import download_model
 import numpy as n
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
@@ -9,11 +10,13 @@ import io
 from cv import DepthEstimationModel
 import numpy as np
 
+model_path = download_model()
+
 # Load the trained model
 @st.cache_resource
 def load_nyu_model():
     model = DepthEstimationModel()  # Using the same class definition as above
-    model.load_state_dict(torch.load('nyu_depth_estimation_model.pth', map_location='cpu'))
+    model.load_state_dict(torch.load(model_path, map_location='cpu'))
     model.eval()
     return model
 
