@@ -1,0 +1,1 @@
+wget https://https://www.dropbox.com/scl/fi/9up2a8m1rg7cb9rk3uvep/nyu_depth_estimation_model.pth?rlkey=p2072fpgz18b2u2tdwpbw1y2s&st=wuoncs2y&dl=0/nyu_depth_estimation_model.pth
