@@ -2,7 +2,7 @@ import streamlit as st
 import torch
 from torchvision import transforms
 from PIL import Image
-from download_model import download_model
+from utils.download_model import download_model
 import numpy as n
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
